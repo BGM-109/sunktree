@@ -1,5 +1,5 @@
 import MyButton from "./components/button";
-import React, { useState } from "react";
+import React from "react";
 import { FaReact, FaPython } from "react-icons/fa";
 import { RiFlutterFill } from "react-icons/ri";
 
