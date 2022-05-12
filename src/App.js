@@ -7,6 +7,8 @@ export default function App() {
   const name = "김선명";
   const description = "(신입) 프론트엔드 React / Flutter";
   const gitLink = "https://github.com/BGM-109";
+  const projectLink =
+    "https://scrawny-mimosa-c8c.notion.site/09a8d4c4a0fd4acf84491b75f57fc483";
   const iconClassName = "hover:animate-spin w-10 h-10";
   const goToLink = (link) => {
     if (link) {
@@ -18,10 +20,10 @@ export default function App() {
 
   const stackClassName = `flex space-x-5 p-4 transition ease-in-out duration-350 `;
   return (
-    <div className="w-full h-screen bg-black flex items-center">
+    <div className="w-full xl:bg-lg_poster bg-no-repeat bg-cover">
       <div
-        className="mx-auto w-full flex flex-col items-center justify-center space-y-4 px-10 text-white bg-no-repeat max-w-xl aspect-iphone bg-black"
-        style={{ backgroundImage: `url("img/poster.jpeg")` }}
+        className="mx-auto w-full h-screen flex flex-col items-center justify-center space-y-4 px-10 text-white bg-no-repeat max-w-xl bg-sm_poster xl:bg-none"
+        // style={{ backgroundImage: `url("img/poster.jpeg")` }}
       >
         <div className="">
           <img
@@ -51,7 +53,7 @@ export default function App() {
         <MyButton
           text="Projects"
           subText="프로젝트들"
-          onClick={() => goToLink()}
+          onClick={() => goToLink(projectLink)}
         />
         <MyButton text="Stack" subText="기술스택" onClick={() => goToLink()} />
       </div>
