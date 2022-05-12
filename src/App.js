@@ -9,7 +9,7 @@ export default function App() {
   const gitLink = "https://github.com/BGM-109";
   const projectLink =
     "https://scrawny-mimosa-c8c.notion.site/09a8d4c4a0fd4acf84491b75f57fc483";
-  const tellLink = "tel:+0821076740008";
+  const tellLink = "tel:+821076740008";
   const iconClassName = "hover:animate-spin w-10 h-10";
   const goToLink = (link) => {
     if (link) {
